@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for test\index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">test/</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">34.62% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>9/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">36.36% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>1/1</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span></td><td class="text"><pre class="prettyprint lang-js">!function(n){var t={};function B(e){<span class="missing-if-branch" title="if path not taken" >I</span>if(t[e])<span class="cstat-no" title="statement not covered" >return t[e].exports;v</span>ar i=t[e]={i:e,l:!1,exports:{}};return n[e].call(i.exports,i,i.exports,B),i.l=!0,i.exports}B.m=n,B.c=t,B.d=<span class="fstat-no" title="function not covered" >function(n,t,e){<span class="cstat-no" title="statement not covered" ></span>B.o(n,t)||Object.defineProperty(n,t,{enumerable:!0,get:e})}</span>,B.r=function(n){"undefined"!=typeof Symbol&amp;&amp;Symbol.toStringTag&amp;&amp;Object.defineProperty(n,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(n,"__esModule",{value:!0})},B.t=<span class="fstat-no" title="function not covered" >function(n,t){<span class="cstat-no" title="statement not covered" ></span>if(1&amp;t&amp;&amp;(n=B(n)),8&amp;t)<span class="cstat-no" title="statement not covered" >return n;<span class="cstat-no" title="statement not covered" >i</span></span>f(4&amp;t&amp;&amp;"object"==typeof n&amp;&amp;n&amp;&amp;n.__esModule)<span class="cstat-no" title="statement not covered" >return n;<span class="cstat-no" title="statement not covered" >v</span></span>ar e=Object.create(null);<span class="cstat-no" title="statement not covered" >i</span>f(B.r(e),Object.defineProperty(e,"default",{enumerable:!0,value:n}),2&amp;t&amp;&amp;"string"!=typeof n)<span class="cstat-no" title="statement not covered" >for(var i in n)<span class="cstat-no" title="statement not covered" >B.d(e,i,<span class="fstat-no" title="function not covered" >function(t){<span class="cstat-no" title="statement not covered" ></span>return n[t]}</span>.bind(null,i));<span class="cstat-no" title="statement not covered" >r</span></span></span>eturn e}</span>,B.n=<span class="fstat-no" title="function not covered" >function(n){<span class="cstat-no" title="statement not covered" ></span>var t=n&amp;&amp;n.__esModule?<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return n.default}</span>:<span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return n}</span>;<span class="cstat-no" title="statement not covered" >r</span>eturn B.d(t,"a",t),t}</span>,B.o=<span class="fstat-no" title="function not covered" >function(n,t){<span class="cstat-no" title="statement not covered" ></span>return Object.prototype.hasOwnProperty.call(n,t)}</span>,B.p="C:\\Users\\xixibobo\\AppData\\Local\\Temp\\_karma_webpack_\\",B(B.s=1)}([,function(module,__webpack_exports__,__webpack_require__){"use strict";eval("__webpack_require__.r(__webpack_exports__);\n\n// CONCATENATED MODULE: ./src/string/isNumber.js\nString.prototype.repeat = function (num) {\n    var tmpArr = [];\n    for (var i = 0; i &lt; num; i++) {\n        tmpArr.push(this);\n    }\n    return tmpArr.join('');\n};\n/**\r\n * 测试是否是数字\r\n */\nfunction isNumber(obj) {\n    var tmpFloat = parseFloat(obj);\n    if (isNaN(tmpFloat)) {\n        return false;\n    }\n    var tmpLen = obj.length - tmpFloat.toString().length;\n    return tmpFloat + '0'.repeat(tmpLen) == obj;\n}\n\n/* harmony default export */ var string_isNumber = (isNumber);\n// CONCATENATED MODULE: ./test/index.js\n\n\ndescribe('isNumber.js :', function () {\n    it('isNumber() should work fine.', function () {\n        expect(string_isNumber(1)).toBe(true);\n        expect(string_isNumber('a')).toBe(false);\n    });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvc3RyaW5nL2lzTnVtYmVyLmpzPzkwNzgiLCJ3ZWJwYWNrOi8vLy4vdGVzdC9pbmRleC5qcz8wNDQxIl0sIm5hbWVzIjpbIlN0cmluZyIsInByb3RvdHlwZSIsInJlcGVhdCIsIm51bSIsInRtcEFyciIsImkiLCJwdXNoIiwiam9pbiIsImlzTnVtYmVyIiwib2JqIiwidG1wRmxvYXQiLCJwYXJzZUZsb2F0IiwiaXNOYU4iLCJ0bXBMZW4iLCJsZW5ndGgiLCJ0b1N0cmluZyIsImRlc2NyaWJlIiwiaXQiLCJleHBlY3QiLCJ0b0JlIl0sIm1hcHBpbmdzIjoiOzs7QUFBQUEsT0FBT0MsU0FBUCxDQUFpQkMsTUFBakIsR0FBMEIsVUFBU0MsR0FBVCxFQUFjO0FBQ3BDLFFBQUlDLFNBQVMsRUFBYjtBQUNBLFNBQUksSUFBSUMsSUFBRSxDQUFWLEVBQWFBLElBQUVGLEdBQWYsRUFBb0JFLEdBQXBCLEVBQXlCO0FBQ3JCRCxlQUFPRSxJQUFQLENBQVksSUFBWjtBQUNIO0FBQ0QsV0FBT0YsT0FBT0csSUFBUCxDQUFZLEVBQVosQ0FBUDtBQUNILENBTkQ7QUFPQTs7O0FBR0EsU0FBU0MsUUFBVCxDQUFtQkMsR0FBbkIsRUFBd0I7QUFDcEIsUUFBSUMsV0FBV0MsV0FBV0YsR0FBWCxDQUFmO0FBQ0EsUUFBSUcsTUFBTUYsUUFBTixDQUFKLEVBQXFCO0FBQ2pCLGVBQU8sS0FBUDtBQUNIO0FBQ0QsUUFBSUcsU0FBU0osSUFBSUssTUFBSixHQUFhSixTQUFTSyxRQUFULEdBQW9CRCxNQUE5QztBQUNBLFdBQU9KLFdBQVcsSUFBSVIsTUFBSixDQUFXVyxNQUFYLENBQVgsSUFBaUNKLEdBQXhDO0FBQ0g7O0FBRUQsb0RBQWVELFFBQWYsRTs7QUNuQkE7O0FBRUFRLFNBQVMsZUFBVCxFQUEwQixZQUFXO0FBQ2pDQyxPQUFHLDhCQUFILEVBQW1DLFlBQVc7QUFDMUNDLGVBQU8sZUFBQVYsQ0FBUyxDQUFULENBQVAsRUFBb0JXLElBQXBCLENBQXlCLElBQXpCO0FBQ0FELGVBQU8sZUFBQVYsQ0FBUyxHQUFULENBQVAsRUFBc0JXLElBQXRCLENBQTJCLEtBQTNCO0FBQ0gsS0FIRDtBQUlILENBTEQiLCJmaWxlIjoiMS5qcyIsInNvdXJjZXNDb250ZW50IjpbIlN0cmluZy5wcm90b3R5cGUucmVwZWF0ID0gZnVuY3Rpb24obnVtKSB7XHJcbiAgICB2YXIgdG1wQXJyID0gW107XHJcbiAgICBmb3IodmFyIGk9MDsgaTxudW07IGkrKykge1xyXG4gICAgICAgIHRtcEFyci5wdXNoKHRoaXMpO1xyXG4gICAgfVxyXG4gICAgcmV0dXJuIHRtcEFyci5qb2luKCcnKTtcclxufVxyXG4vKipcclxuICog5rWL6K+V5piv5ZCm5piv5pWw5a2XXHJcbiAqL1xyXG5mdW5jdGlvbiBpc051bWJlciAob2JqKSB7XHJcbiAgICB2YXIgdG1wRmxvYXQgPSBwYXJzZUZsb2F0KG9iaik7XHJcbiAgICBpZiAoaXNOYU4odG1wRmxvYXQpKSB7XHJcbiAgICAgICAgcmV0dXJuIGZhbHNlO1xyXG4gICAgfVxyXG4gICAgdmFyIHRtcExlbiA9IG9iai5sZW5ndGggLSB0bXBGbG9hdC50b1N0cmluZygpLmxlbmd0aDtcclxuICAgIHJldHVybiB0bXBGbG9hdCArICcwJy5yZXBlYXQodG1wTGVuKSA9PSBvYmo7XHJcbn1cclxuXHJcbmV4cG9ydCBkZWZhdWx0IGlzTnVtYmVyOyIsImltcG9ydCBpc051bWJlciBmcm9tICcuLi9zcmMvc3RyaW5nL2lzTnVtYmVyLmpzJ1xyXG5cclxuZGVzY3JpYmUoJ2lzTnVtYmVyLmpzIDonLCBmdW5jdGlvbigpIHtcclxuICAgIGl0KCdpc051bWJlcigpIHNob3VsZCB3b3JrIGZpbmUuJywgZnVuY3Rpb24oKSB7XHJcbiAgICAgICAgZXhwZWN0KGlzTnVtYmVyKDEpKS50b0JlKHRydWUpXHJcbiAgICAgICAgZXhwZWN0KGlzTnVtYmVyKCdhJykpLnRvQmUoZmFsc2UpXHJcbiAgICB9KVxyXG59KSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///1\n")}]);</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Jun 28 2018 17:16:40 GMT+0800 (中国标准时间)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
