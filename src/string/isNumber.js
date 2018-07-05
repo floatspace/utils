@@ -1,20 +1,16 @@
-String.prototype.repeat = function(num) {
-    var tmpArr = [];
-    for(var i=0; i<num; i++) {
-        tmpArr.push(this);
-    }
-    return tmpArr.join('');
-}
 /**
  * 测试是否是数字
+ * 校验只要是数字（包含正负整数，0以及正负浮点数）就返回true
  */
-function isNumber (obj) {
-    var tmpFloat = parseFloat(obj);
-    if (isNaN(tmpFloat)) {
+function isNumber(val) {
+    if (val === "" || val == null) {
         return false;
     }
-    var tmpLen = obj.length - tmpFloat.toString().length;
-    return tmpFloat + '0'.repeat(tmpLen) == obj;
+    if (!isNaN(val)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 export default isNumber;
